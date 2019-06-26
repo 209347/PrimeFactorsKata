@@ -10,6 +10,8 @@ public class PrimeFactors {
                 factors.add(2);
                 value /= 2;
             }
+        }
+        if(value > 1) {
             factors.add(value);
         }
         return factors;
