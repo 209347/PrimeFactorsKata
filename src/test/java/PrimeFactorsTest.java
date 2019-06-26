@@ -36,4 +36,9 @@ public class PrimeFactorsTest {
     public void factorizationOf_8_is_2_2_2() {
         assertThat(PrimeFactors.of(8), is(List.of(2, 2, 2)));
     }
+
+    @Test
+    public void factorizationOf_9_is_3_3() {
+        assertThat(PrimeFactors.of(9), is(List.of(3, 3)));
+    }
 }
