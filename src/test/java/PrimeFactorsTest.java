@@ -1,3 +1,4 @@
+import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.*;
@@ -10,4 +11,8 @@ public class PrimeFactorsTest {
         assertThat(true, equalTo(true));
     }
 
+    @Test
+    public void factorizationOf_1_isEmpty() {
+        assertThat(PrimeFactors.of(1), is(Matchers.<Integer>empty()));
+    }
 }
